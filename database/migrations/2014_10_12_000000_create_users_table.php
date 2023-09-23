@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('photo')->nullable();
             $table->string('phone')->nullable();
             $table->text('address')->nullable();
-            $table->enum('role',['admin','medical_officers','school_nurse','class_adviser'])->default('class_adviser');
+            $table->enum('role',['admin','medical_officer','school_nurse','class_adviser'])->default('class_adviser');
             $table->enum('status',['active','inactive'])->default('active');
             $table->rememberToken();
             $table->timestamps();
