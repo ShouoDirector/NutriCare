@@ -34,7 +34,18 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
-Route::get('/admin/dashboard', [AdminController::class, 'AdminDashboard'])->name('admin.dashboard');
-Route::get('/medical_officer/dashboard', [MedicalOfficerController::class, 'MedicalOfficerDashboard'])->name('medical_officer.dashboard');
-Route::get('/school_nurse/dashboard', [SchoolNurseController::class, 'SchoolNurseDashboard'])->name('school_nurse.dashboard');
-Route::get('/class_adviser/dashboard', [ClassAdviserController::class, 'ClassAdviserDashboard'])->name('class_adviser.dashboard');
+Route::middleware(['auth','role:admin'])->group(function(){
+    Route::get('/admin/dashboard', [AdminController::class, 'AdminDashboard'])->name('admin.dashboard');
+}); //End Group Admin Middleware
+
+Route::middleware(['auth','role:medical_officer'])->group(function(){
+    Route::get('/medical_officer/dashboard', [MedicalOfficerController::class, 'MedicalOfficerDashboard'])->name('medical_officer.dashboard');
+}); //End Group Medical Officer Middleware
+
+Route::middleware(['auth','role:school_nurse'])->group(function(){
+    Route::get('/school_nurse/dashboard', [SchoolNurseController::class, 'SchoolNurseDashboard'])->name('school_nurse.dashboard');
+}); //End Group School Nurse Middleware
+
+Route::middleware(['auth','role:class_adviser'])->group(function(){
+    Route::get('/class_adviser/dashboard', [ClassAdviserController::class, 'ClassAdviserDashboard'])->name('class_adviser.dashboard');
+}); //End Group Class Adviser Middleware
