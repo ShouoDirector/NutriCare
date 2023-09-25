@@ -65,7 +65,7 @@
                                     Services</h1>
                                 <h6 class="d-flex align-items-center gap-2 fs-4 fw-semibold mb-3 mt-5" data-aos="fade-up"
                                     data-aos-delay="400" data-aos-duration="1000"><i
-                                        class="ti ti-rocket text-secondary fs-6"></i>Kick start your contribution for the elementary pupils with</h6>
+                                        class="ti ti-rocket text-secondary fs-6"></i>Kick start your contribution!</h6>
                                 <p class="fs-5 mb-5 text-dark fw-normal" data-aos="fade-up" data-aos-delay="600"
                                     data-aos-duration="1000">The software named <span class="text-primary">NutriCare</span> designed to enhance the efficiency and
                                     effectiveness of school health services and provides a user-friendly interface
@@ -96,18 +96,18 @@
                                     data-aos-duration="1000">
                 <div class="container" id="more">
                     <div class="row justify-content-between">
-                        <div class="col-lg-7 col-xl-5 pt-lg-5 mt-5 mb-lg-0">
+                        <div class="col-lg-7 col-xl-5 pt-lg-5 mt-5 mb-5">
                             <h2 class="fs-8 text-white text-center text-lg-start fw-bolder mb-8">Give Us Feedback to
                                 Support the upcoming developments and updates</h2><br><br>
-                            <p class="text-white">In tender youth, as buds unfurl with grace,<br>
-                                Bright pupils learn, in health, to find their place. <br>
-                                Their future's canvas, blank and yet untamed,<br>
-                                With care we nurture, hopes and dreams inflamed.<br>
+                            <p class="text-white text-end"><span class="fs-10">"</span>In tender youth, as buds unfurl with grace,<br>
+                                    Bright pupils learn, in health, to find their place. <br>
+                                    Their future's canvas, blank and yet untamed,<br>
+                                    With care we nurture, hopes and dreams inflamed.<br>
                                 <br><br>
-                                With wholesome fare and exercise each day,<br>
-                                Their bodies strong, their spirits light as fey.<br>
-                                In classrooms filled with wisdom's endless stream,<br>
-                                We forge a path where Shakespeare's dreams may gleam.</p>
+                                    With wholesome fare and exercise each day,<br>
+                                    Their bodies strong, their spirits light as fey.<br>
+                                    In classrooms filled with wisdom's endless stream,<br>
+                                    We forge a path where Shakespeare's dreams may gleam.</p>
                         </div>
                         <div class="col-lg-5 col-xl-5">
                             <div class="text-center text-lg-end">
