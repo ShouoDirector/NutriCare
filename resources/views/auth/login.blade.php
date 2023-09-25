@@ -16,12 +16,20 @@
           <div class="row">
 
           <!-- Include login/register widgets -->
-            @include('include.widgets.login_register_page')
+          <div class="col-xl-7 col-xxl-8">
+            <a href="/" class="text-nowrap logo-img d-block px-4 py-9 w-100">
+                <img src="{{ asset('dark-logo.png') }}" width="180" alt="">
+            </a>
+            <div class="d-none d-xl-flex align-items-center justify-content-center" style="height: calc(100vh - 80px);">
+                <img src="https://i.ibb.co/NZ7NRx0/login-security.png" alt="" class="img-fluid" width="500">
+            </div>
+          </div>
+
 
             <div class="col-xl-5 col-xxl-4">
               <div class="authentication-login min-vh-100 bg-body row justify-content-center align-items-center p-4">
                 <div class="col-sm-8 col-md-6 col-xl-9">
-                  <h2 class="mb-3 fs-7 fw-bolder text-center">Welcome to NutriCare</h2>
+                  <h2 class="mb-3 fs-7 fw-bolder text-center">Welcome to <span class="text-primary">NutriCare</span></h2>
 
                   <!-- Commented out Google sign-in option
                   <div class="row">
