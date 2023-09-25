@@ -48,7 +48,7 @@
                     <div class="mb-3">
                       <x-input-label for="login" class="form-label" :value="__('Email')"/>
                       <x-text-input id="login" class="form-control" type="text" name="login" :value="old('login')" required autofocus autocomplete="username" />
-                      <x-input-error :messages="$errors->get('email')" class="mt-2" />
+                      <x-input-error :messages="$errors->get('email')" class="mt-2 text-danger" />
                     </div>
 
                     <div class="mb-4">
@@ -57,7 +57,7 @@
                             type="password"
                             name="password"
                             required autocomplete="current-password" />
-                      <x-input-error :messages="$errors->get('password')" class="mt-2" />
+                      <x-input-error :messages="$errors->get('password')" class="mt-2 text-danger" />
                     </div>
 
                     <div class="d-flex align-items-center justify-content-between mb-4">
