@@ -80,30 +80,6 @@
                 </ul>
             </div>
         </div>
-        <div class="layout-type pb-4">
-            <h6 class="fw-semibold fs-4 mb-1">Layout Type</h6>
-            <div class="d-flex align-items-center gap-3 my-3">
-                <a href="index-2.html" class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center gap-2">
-                    <i class="ti ti-layout-sidebar fs-6 text-primary"></i>
-                    <span class="text-dark">Vertical</span>
-                </a>
-            </div>
-        </div>
-        <div class="container-option pb-4">
-            <h6 class="fw-semibold fs-4 mb-1">Container Option</h6>
-            <div class="d-flex align-items-center gap-3 my-3">
-                <a href="javascript:void(0)"
-                    class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center gap-2 boxed-width text-dark">
-                    <i class="ti ti-layout-distribute-vertical fs-7 text-primary"></i>
-                    <span class="text-dark">Boxed</span>
-                </a>
-                <a href="javascript:void(0)"
-                    class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center gap-2 full-width text-dark">
-                    <i class="ti ti-layout-distribute-horizontal fs-7"></i>
-                    <span class="text-dark">Full</span>
-                </a>
-            </div>
-        </div>
         <div class="sidebar-type pb-4">
             <h6 class="fw-semibold fs-4 mb-1">Sidebar Type</h6>
             <div class="d-flex align-items-center gap-3 my-3">
@@ -116,21 +92,6 @@
                     class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center text-dark sidebartoggler gap-2">
                     <i class="ti ti-layout-sidebar fs-7"></i>
                     <span class="text-dark">Collapse</span>
-                </a>
-            </div>
-        </div>
-        <div class="card-with pb-4">
-            <h6 class="fw-semibold fs-4 mb-1">Card With</h6>
-            <div class="d-flex align-items-center gap-3 my-3">
-                <a href="javascript:void(0)"
-                    class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center gap-2 text-dark cardborder">
-                    <i class="ti ti-border-outer fs-7"></i>
-                    <span class="text-dark">Border</span>
-                </a>
-                <a href="javascript:void(0)"
-                    class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center gap-2 cardshadow">
-                    <i class="ti ti-border-none fs-7"></i>
-                    <span class="text-dark">Shadow</span>
                 </a>
             </div>
         </div>
