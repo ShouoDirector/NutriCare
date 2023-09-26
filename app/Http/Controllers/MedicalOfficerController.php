@@ -19,6 +19,10 @@ class MedicalOfficerController extends Controller
 
         $request->session()->regenerateToken();
 
-        return redirect('/login');
+        return redirect('/medical_officer/login');
+    } //End Method
+
+    public function MedicalOfficerLogin(){
+        return view('medical_officer.medical_officer_login');
     } //End Method
 }

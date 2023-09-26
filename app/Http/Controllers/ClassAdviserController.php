@@ -19,7 +19,10 @@ class ClassAdviserController extends Controller
 
         $request->session()->regenerateToken();
 
-        return redirect('/login');
+        return redirect('/class_adviser/login');
     } //End Method
 
+    public function ClassAdviserLogin(){
+        return view('class_adviser.class_adviser_login');
+    } //End Method
 }

@@ -19,6 +19,10 @@ class SchoolNurseController extends Controller
 
         $request->session()->regenerateToken();
 
-        return redirect('/login');
+        return redirect('/school_nurse/login');
+    } //End Method
+
+    public function SchoolNurseLogin(){
+        return view('school_nurse.school_nurse_login');
     } //End Method
 }
