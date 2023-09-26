@@ -215,25 +215,6 @@
                     <i class="ti ti-align-justified fs-7"></i>
                 </a>
                 <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-center">
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="https://i.ibb.co/7JmhJDq/united-kingdom.png" alt=""
-                                class="rounded-circle object-fit-cover round-20">
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
-                            <div class="message-body" data-simplebar>
-                                <a href="javascript:void(0)" class="d-flex align-items-center py-3 px-4 dropdown-item">
-                                    <div class="position-relative">
-                                        <img src="https://i.ibb.co/7JmhJDq/united-kingdom.png" alt=""
-                                            class="rounded-circle object-fit-cover round-20">
-                                    </div>
-                                    <p class="mb-0 fs-3">English (UK)</p>
-                                </a>
-                            </div>
-                        </div>
-                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2"
                             data-bs-toggle="dropdown" aria-expanded="false">

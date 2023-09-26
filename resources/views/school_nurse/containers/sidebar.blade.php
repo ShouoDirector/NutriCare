@@ -31,7 +31,7 @@
                 <!-- Dashboard -->
                 <!-- =================== -->
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="index.php" aria-expanded="false">
+                    <a class="sidebar-link" href="{{ route('admin.dashboard') }}" aria-expanded="false">
                         <span>
                             <i class="ti ti-dashboard"></i>
                         </span>
@@ -136,7 +136,7 @@
                         <span class="d-flex">
                             <i class="ti ti-star"></i>
                         </span>
-                        <span class="hide-menu">External Link</span>
+                        <span class="hide-menu">Documentation</span>
                     </a>
                 </li>
             </ul>
