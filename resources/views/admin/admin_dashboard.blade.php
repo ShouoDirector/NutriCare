@@ -7,7 +7,7 @@
 
 <body>
 
-    @include('include.core.preloader')
+    @include('include.preloader')
 
     <!--  Body Wrapper -->
     <div class="page-wrapper" id="main-wrapper" data-theme="blue_theme" data-layout="vertical" data-sidebartype="full"
@@ -36,7 +36,7 @@
     <!--  Search Bar -->
     @include('admin.containers.search')
     <!-- Customizer -->
-    @include('include.core.customize')
+    @include('include.customize')
     <!-- Js -->
     @include('admin.containers.js')
 </body>

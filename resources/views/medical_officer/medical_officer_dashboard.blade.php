@@ -7,7 +7,7 @@
 
 <body>
 
-    @include('include.core.preloader')
+    @include('include.preloader')
 
     <!--  Body Wrapper -->
     <div class="page-wrapper" id="main-wrapper" data-theme="blue_theme" data-layout="vertical" data-sidebartype="full"
@@ -35,7 +35,7 @@
     <!--  Search Bar -->
     @include('medical_officer.containers.search')
     <!-- Customizer -->
-    @include('include.core.customize')
+    @include('include.customize')
 
     <!-- ---------------------------------------------- -->
     <!-- Import Js Files -->

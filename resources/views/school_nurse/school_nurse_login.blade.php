@@ -7,7 +7,7 @@
 
 <body>
     <!-- Preloader -->
-    @include('include.core.preloader')
+    @include('include.preloader')
 
     <!--  Body Wrapper -->
     <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-sidebartype="full"

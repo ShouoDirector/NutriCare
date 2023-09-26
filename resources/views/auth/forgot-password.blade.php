@@ -2,13 +2,13 @@
 <html lang="en">
   
 <head>
-  @include('include.core.head')
+  @include('include.head')
 </head>
 
   <body>
 
     <!-- Preloader -->
-    @include('include.core.preloader')
+    @include('include.preloader')
 
     <!--  Body Wrapper -->
     <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed">
