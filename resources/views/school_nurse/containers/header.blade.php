@@ -349,7 +349,7 @@
                                     </a>
                                 </div>
                                 <div class="d-grid py-4 px-7 pt-8">
-                                    <a href="authentication-login.php" class="btn btn-outline-primary">Log Out</a>
+                                    <a href="{{ route('school_nurse.logout') }}" class="btn btn-outline-primary">Log Out</a>
                                 </div>
                             </div>
                         </div>

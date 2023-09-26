@@ -119,5 +119,4 @@
     <script src="{{ asset('dist/js/custom.js') }}"></script>
   </body>
 
-<!-- authentication-register.html  Fri, 22 Sep 2023 01:37:00 GMT -->
 </html>
