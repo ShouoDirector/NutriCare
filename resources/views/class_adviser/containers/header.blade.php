@@ -330,7 +330,7 @@
                                     </a>
                                 </div>
                                 <div class="d-grid py-4 px-7 pt-8">
-                                    <a href="{{ route('admin.logout') }}" class="btn btn-outline-primary">Log Out</a>
+                                    <a href="{{ route('class_adviser.logout') }}" class="btn btn-outline-primary">Log Out</a>
                                 </div>
                             </div>
                         </div>

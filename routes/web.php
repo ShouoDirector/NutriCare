@@ -59,14 +59,11 @@ Route::middleware(['auth','role:class_adviser'])->group(function(){
 }); //End Group Class Adviser Middleware
 
 
-//Admin Login Page
+
 Route::get('/admin/login', [AdminController::class, 'AdminLogin'])->name('admin.login');
 
-//Medical Officer Login Page
 Route::get('/medical_officer/login', [MedicalOfficerController::class, 'MedicalOfficerLogin'])->name('medical_officer.login');
 
-//School Nurse Login Page
 Route::get('/school_nurse/login', [SchoolNurseController::class, 'SchoolNurseLogin'])->name('school_nurse.login');
 
-//Class Adviser Login Page
 Route::get('/class_adviser/login', [ClassAdviserController::class, 'ClassAdviserLogin'])->name('class_adviser.login');
