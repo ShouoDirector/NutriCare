@@ -120,7 +120,7 @@
             </section>
 
         </div>
-        <footer class="footer-part pt-8 pb-5 mt-5" data-aos="fade-up" data-aos-delay="800"
+        <footer class="footer-part pt-8 pb-5 mt-5" data-aos="fade-up" data-aos-delay="0"
                                     data-aos-duration="1000">
             <div class="container">
                 <div class="row justify-content-center">

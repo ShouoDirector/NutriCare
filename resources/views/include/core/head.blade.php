@@ -19,3 +19,10 @@
     <link rel="shortcut icon" type="image/png" href="{{ asset('favicon.ico') }}" />
     <!-- Core Css -->
     <link id="themeColors" rel="stylesheet" href="{{ asset('dist/css/style.min.css') }}" />
+    <!-- Prisma CSS -->
+    <link rel="stylesheet" href="{{ asset('dist/libs/prismjs/themes/prism-okaidia.min.css') }}">
+    <!-- Bootstrap CSS Switch -->
+    <link rel="stylesheet" href="{{ asset('dist/libs/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css') }}">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="{{ asset('dist/libs/owl.carousel/dist/assets/owl.carousel.min.css') }}">
+

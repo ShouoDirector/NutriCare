@@ -13,76 +13,20 @@
                 <ul class="list mb-0 py-2">
                     <li class="p-1 mb-1 bg-hover-light-black">
                         <a href="#">
-                            <span class="fs-3 text-black fw-normal d-block">Modern</span>
+                            <span class="fs-3 fw-normal d-block">Modern</span>
                             <span class="fs-3 text-muted d-block">/dashboards/dashboard1</span>
                         </a>
                     </li>
                     <li class="p-1 mb-1 bg-hover-light-black">
                         <a href="#">
-                            <span class="fs-3 text-black fw-normal d-block">Dashboard</span>
+                            <span class="fs-3 fw-normal d-block">Dashboard</span>
                             <span class="fs-3 text-muted d-block">/dashboards/dashboard2</span>
                         </a>
                     </li>
                     <li class="p-1 mb-1 bg-hover-light-black">
                         <a href="#">
-                            <span class="fs-3 text-black fw-normal d-block">Contacts</span>
+                            <span class="fs-3 fw-normal d-block">Contacts</span>
                             <span class="fs-3 text-muted d-block">/apps/contacts</span>
-                        </a>
-                    </li>
-                    <li class="p-1 mb-1 bg-hover-light-black">
-                        <a href="#">
-                            <span class="fs-3 text-black fw-normal d-block">Posts</span>
-                            <span class="fs-3 text-muted d-block">/apps/blog/posts</span>
-                        </a>
-                    </li>
-                    <li class="p-1 mb-1 bg-hover-light-black">
-                        <a href="#">
-                            <span class="fs-3 text-black fw-normal d-block">Detail</span>
-                            <span
-                                class="fs-3 text-muted d-block">/apps/blog/detail/streaming-video-way-before-it-was-cool-go-dark-tomorrow</span>
-                        </a>
-                    </li>
-                    <li class="p-1 mb-1 bg-hover-light-black">
-                        <a href="#">
-                            <span class="fs-3 text-black fw-normal d-block">Shop</span>
-                            <span class="fs-3 text-muted d-block">/apps/ecommerce/shop</span>
-                        </a>
-                    </li>
-                    <li class="p-1 mb-1 bg-hover-light-black">
-                        <a href="#">
-                            <span class="fs-3 text-black fw-normal d-block">Modern</span>
-                            <span class="fs-3 text-muted d-block">/dashboards/dashboard1</span>
-                        </a>
-                    </li>
-                    <li class="p-1 mb-1 bg-hover-light-black">
-                        <a href="#">
-                            <span class="fs-3 text-black fw-normal d-block">Dashboard</span>
-                            <span class="fs-3 text-muted d-block">/dashboards/dashboard2</span>
-                        </a>
-                    </li>
-                    <li class="p-1 mb-1 bg-hover-light-black">
-                        <a href="#">
-                            <span class="fs-3 text-black fw-normal d-block">Contacts</span>
-                            <span class="fs-3 text-muted d-block">/apps/contacts</span>
-                        </a>
-                    </li>
-                    <li class="p-1 mb-1 bg-hover-light-black">
-                        <a href="#">
-                            <span class="fs-3 text-black fw-normal d-block">Posts</span>
-                            <span class="fs-3 text-muted d-block">/apps/blog/posts</span>
-                        </a>
-                    </li>
-                    <li class="p-1 mb-1 bg-hover-light-black">
-                        <a href="#">
-                            <span class="fs-3 text-black fw-normal d-block">Detail</span>
-                            <span
-                                class="fs-3 text-muted d-block">/apps/blog/detail/streaming-video-way-before-it-was-cool-go-dark-tomorrow</span>
-                        </a>
-                    </li>
-                    <li class="p-1 mb-1 bg-hover-light-black">
-                        <a href="#">
-                            <span class="fs-3 text-black fw-normal d-block">Shop</span>
-                            <span class="fs-3 text-muted d-block">/apps/ecommerce/shop</span>
                         </a>
                     </li>
                 </ul>

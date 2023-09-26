@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class ClassAdviserController extends Controller
 {
     public function ClassAdviserDashboard(){
-        return view('class_adviser.class_adviser_dashboard');
+        return view('class_adviser.class_adviser_index');
     }
 }

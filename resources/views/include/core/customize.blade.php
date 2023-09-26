@@ -20,7 +20,7 @@
                 </a>
                 <a href="javascript:void(0)" onclick="toggleTheme('../../dist/css/style-dark.min.css')"
                     class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center gap-2 dark-theme text-dark">
-                    <i class="ti ti-moon fs-7 "></i>
+                    <i id="themeIcon" class="ti ti-moon fs-7 "></i>
                     <span class="text-dark">Dark</span>
                 </a>
             </div>

@@ -95,6 +95,7 @@ $(".boxed-width").click(function () {
 });
 
 /*Dark/Light theme*/
+
 $(".light-logo").hide();
 $(".dark-theme").click(function () {
   $("nav.navbar-light").addClass("navbar-dark");
