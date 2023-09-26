@@ -10,9 +10,9 @@
     <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
             <a href="index-2.php" class="text-nowrap logo-img">
-                <img src="{{ asset('dark-logo.png') }}"
+                <img id="darkLogo" src="{{ asset('dark-logo.png') }}"
                     class="dark-logo" width="180" alt="" />
-                <img src="{{ asset('light-logo.png') }}"
+                <img id="lightLogo" src="{{ asset('light-logo.png') }}"
                     class="light-logo" width="180" alt="" />
             </a>
             <div class="close-btn d-lg-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">

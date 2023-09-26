@@ -39,7 +39,6 @@
 
     <!--Minimal Required JS Files -->
     @include('include.core.js_files')
-
 </body>
 
 </html>
