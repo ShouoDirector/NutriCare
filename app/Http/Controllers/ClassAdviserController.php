@@ -1,9 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Support\Facades\Auth;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use App\Models\User;
 
 class ClassAdviserController extends Controller
 {
@@ -25,4 +26,10 @@ class ClassAdviserController extends Controller
     public function ClassAdviserLogin(){
         return view('class_adviser.class_adviser_login');
     } //End Method
+
+    public function ClassAdviserProfile(){
+        $id = Auth::user()->id;
+        $profileData = User::find($id);
+        return view('class_adviser.class_adviser_profile_view', compact('profileData'));
+    }
 }

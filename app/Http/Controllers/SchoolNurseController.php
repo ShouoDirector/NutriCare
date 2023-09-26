@@ -1,9 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Support\Facades\Auth;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use App\Models\User;
 
 class SchoolNurseController extends Controller
 {
@@ -25,4 +26,10 @@ class SchoolNurseController extends Controller
     public function SchoolNurseLogin(){
         return view('school_nurse.school_nurse_login');
     } //End Method
+
+    public function SchoolNurseProfile(){
+        $id = Auth::user()->id;
+        $profileData = User::find($id);
+        return view('school_nurse.school_nurse_profile_view', compact('profileData'));
+    }   //End Method
 }

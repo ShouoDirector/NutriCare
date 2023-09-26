@@ -1,9 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Support\Facades\Auth;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use App\Models\User;
 
 class MedicalOfficerController extends Controller
 {
@@ -25,4 +26,10 @@ class MedicalOfficerController extends Controller
     public function MedicalOfficerLogin(){
         return view('medical_officer.medical_officer_login');
     } //End Method
+
+    public function MedicalOfficerProfile(){
+        $id = Auth::user()->id;
+        $profileData = User::find($id);
+        return view('medical_officer.medical_officer_profile_view', compact('profileData'));
+    }   //End Method
 }

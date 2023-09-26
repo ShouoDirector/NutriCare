@@ -80,7 +80,7 @@
                                         </div>
                                         <div class="col-6">
                                             <div class="position-relative">
-                                                <a href="page-user-profile.php"
+                                                <a href="{{ route('admin.profile') }}"
                                                     class="d-flex align-items-center pb-9 position-relative text-decoration-none text-decoration-none text-decoration-none text-decoration-none">
                                                     <div
                                                         class="bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
@@ -175,7 +175,7 @@
                                     </li>
                                     <li class="mb-3">
                                         <a class="fw-semibold text-dark bg-hover-primary text-decoration-none text-decoration-none text-decoration-none text-decoration-none"
-                                            href="page-user-profile.php">User Application</a>
+                                            href="{{ route('admin.profile') }}">User Application</a>
                                     </li>
                                     <li class="mb-3">
                                         <a class="fw-semibold text-dark bg-hover-primary text-decoration-none text-decoration-none text-decoration-none text-decoration-none"
@@ -295,7 +295,7 @@
                                     </div>
                                 </div>
                                 <div class="message-body">
-                                    <a href="page-user-profile.php" class="py-8 px-7 mt-8 d-flex align-items-center">
+                                    <a href="{{ route('medical_officer.profile') }}" class="py-8 px-7 mt-8 d-flex align-items-center">
                                         <span
                                             class="d-flex align-items-center justify-content-center bg-light rounded-1 p-6">
                                             <img src="https://demos.adminmart.com/premium/bootstrap/modernize-bootstrap/package/dist/images/svgs/icon-account.svg"
