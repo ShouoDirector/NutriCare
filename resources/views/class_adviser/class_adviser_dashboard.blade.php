@@ -38,6 +38,8 @@
     @include('include.customize')
     <!-- Js -->
     @include('class_adviser.containers.js')
+    <!-- Toaster -->
+    @include('class_adviser.containers.toastr')
 
 </body>
 

@@ -25,7 +25,6 @@
                 @yield('admin')
 
             </div>
-            
         </div>
         <div class="dark-transparent sidebartoggler"></div>
         <div class="dark-transparent sidebartoggler"></div>
@@ -39,6 +38,9 @@
     @include('include.customize')
     <!-- Js -->
     @include('admin.containers.js')
+    <!-- Toaster -->
+    @include('admin.containers.toastr')
+
 </body>
 
 </html>

@@ -38,6 +38,8 @@
     @include('include.customize')
     <!-- Js -->
     @include('medical_officer.containers.js')
+    <!-- Toaster -->
+    @include('medical_officer.containers.toastr')
 </body>
 
 </html>

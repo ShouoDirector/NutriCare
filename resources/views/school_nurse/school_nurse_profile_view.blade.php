@@ -180,8 +180,9 @@ $formattedRole = strtolower($profileData->role);
                     <div class="card">
                         <div class="card-body">
                             <h5>Update {{ ucwords($formattedRole) }} Information</h5>
-                            <p class="card-subtitle mb-3">
-                                made with bootstrap elements
+                            <p class="card-subtitle mb-3 text-danger">
+                                <i class="ti ti-alert-circle"></i>
+                                Email address is read-only
                             </p>
                             <form class="" method="POST" action="{{ route('school_nurse.profile.store') }}" enctype="multipart/form-data">
                                 @csrf
@@ -195,11 +196,6 @@ $formattedRole = strtolower($profileData->role);
                                     <input type="text" name="username" class="form-control"
                                         value="{{ $profileData->username }}">
                                     <label><i class="ti ti-at me-2 fs-4"></i>Username</label>
-                                </div>
-                                <div class="form-floating mb-3">
-                                    <input type="email" name="email" class="form-control"
-                                        value="{{ $profileData->email }}">
-                                    <label><i class="ti ti-mail me-2 fs-4"></i>Email address</label>
                                 </div>
                                 <div class="form-floating mb-3">
                                     <input type="text" name="phone" class="form-control"

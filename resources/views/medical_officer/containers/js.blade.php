@@ -15,6 +15,7 @@
     <script src="{{ asset('dist/libs/prismjs/prism.js') }}"></script>
     <script src="{{ asset('dist/libs/bootstrap-switch/dist/js/bootstrap-switch.min.js') }}"></script>
     <script src="{{ asset('dist/js/forms/bootstrap-switch.js') }}"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
     <!-- ---------------------------------------------- -->
     <!-- current page js files -->

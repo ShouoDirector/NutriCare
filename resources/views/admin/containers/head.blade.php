@@ -23,4 +23,6 @@
 <link rel="stylesheet" href="{{ asset('dist/libs/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css') }}">
 <!-- Owl Carousel -->
 <link rel="stylesheet" href="{{ asset('dist/libs/owl.carousel/dist/assets/owl.carousel.min.css') }}">
+<!-- Toastr -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css">
 

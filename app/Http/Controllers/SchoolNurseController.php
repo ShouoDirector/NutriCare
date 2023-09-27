@@ -38,7 +38,6 @@ class SchoolNurseController extends Controller
         $data = User::find($id);
         $data->name = $request->name;
         $data->username = $request->username;
-        $data->email = $request->email;
         $data->phone = $request->phone;
         $data->address = $request->address;
         
@@ -51,6 +50,11 @@ class SchoolNurseController extends Controller
 
         $data->save();
 
-        return redirect()->back();
+        $notification = array(
+            'message' => 'School Nurse Profile Updated Successfully',
+            'alert-type' => 'success'
+        );
+
+        return redirect()->back()->with($notification);
     }
 }

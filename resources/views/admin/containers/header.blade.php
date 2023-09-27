@@ -295,7 +295,6 @@
                                     </div>
                                 </div>
                                 <div class="message-body">
-                                {{ route('admin.profile') }}
                                     <a href="{{ route('admin.profile') }}" class="py-8 px-7 mt-8 d-flex align-items-center">
                                         <span
                                             class="d-flex align-items-center justify-content-center bg-light rounded-1 p-6">
