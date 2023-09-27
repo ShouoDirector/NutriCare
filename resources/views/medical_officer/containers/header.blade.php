@@ -1,4 +1,11 @@
 <!--  Header Start -->
+
+@php
+$id = Auth::user()->id;
+$profileData = App\Models\User::find($id);
+$formattedRole = strtolower($profileData->role);
+@endphp
+
 <header class="app-header">
     <nav class="navbar navbar-expand-lg navbar-light">
         <ul class="navbar-nav">
@@ -24,67 +31,14 @@
                             <div class=" ps-7 pt-7">
                                 <div class="border-bottom">
                                     <div class="row">
-                                        <div class="col-6">
+                                        <div class="col">
                                             <div class="position-relative">
-                                                <a href="app-chat.php"
+
+                                                <a href="{{ route($profileData->role . '.profile') }}"
                                                     class="d-flex align-items-center pb-9 position-relative text-decoration-none text-decoration-none text-decoration-none text-decoration-none">
                                                     <div
                                                         class="bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                        <img src="https://demos.adminmart.com/premium/bootstrap/modernize-bootstrap/package/dist/images/svgs/icon-dd-chat.svg"
-                                                            alt="" class="img-fluid" width="24" height="24">
-                                                    </div>
-                                                    <div class="d-inline-block">
-                                                        <h6 class="mb-1 fw-semibold bg-hover-primary">Chat Application
-                                                        </h6>
-                                                        <span class="fs-2 d-block text-dark">New messages arrived</span>
-                                                    </div>
-                                                </a>
-                                                <a href="app-invoice.php"
-                                                    class="d-flex align-items-center pb-9 position-relative text-decoration-none text-decoration-none text-decoration-none text-decoration-none">
-                                                    <div
-                                                        class="bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                        <img src="https://demos.adminmart.com/premium/bootstrap/modernize-bootstrap/package/dist/images/svgs/icon-dd-invoice.svg"
-                                                            alt="" class="img-fluid" width="24" height="24">
-                                                    </div>
-                                                    <div class="d-inline-block">
-                                                        <h6 class="mb-1 fw-semibold bg-hover-primary">Invoice App</h6>
-                                                        <span class="fs-2 d-block text-dark">Get latest invoice</span>
-                                                    </div>
-                                                </a>
-                                                <a href="app-contact2.php"
-                                                    class="d-flex align-items-center pb-9 position-relative text-decoration-none text-decoration-none text-decoration-none text-decoration-none">
-                                                    <div
-                                                        class="bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                        <img src="https://demos.adminmart.com/premium/bootstrap/modernize-bootstrap/package/dist/images/svgs/icon-dd-mobile.svg"
-                                                            alt="" class="img-fluid" width="24" height="24">
-                                                    </div>
-                                                    <div class="d-inline-block">
-                                                        <h6 class="mb-1 fw-semibold bg-hover-primary">Contact
-                                                            Application</h6>
-                                                        <span class="fs-2 d-block text-dark">2 Unsaved Contacts</span>
-                                                    </div>
-                                                </a>
-                                                <a href="app-email.php"
-                                                    class="d-flex align-items-center pb-9 position-relative text-decoration-none text-decoration-none text-decoration-none text-decoration-none">
-                                                    <div
-                                                        class="bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                        <img src="https://demos.adminmart.com/premium/bootstrap/modernize-bootstrap/package/dist/images/svgs/icon-dd-message-box.svg"
-                                                            alt="" class="img-fluid" width="24" height="24">
-                                                    </div>
-                                                    <div class="d-inline-block">
-                                                        <h6 class="mb-1 fw-semibold bg-hover-primary">Email App</h6>
-                                                        <span class="fs-2 d-block text-dark">Get new emails</span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="position-relative">
-                                                <a href="{{ route('admin.profile') }}"
-                                                    class="d-flex align-items-center pb-9 position-relative text-decoration-none text-decoration-none text-decoration-none text-decoration-none">
-                                                    <div
-                                                        class="bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                        <img src="https://demos.adminmart.com/premium/bootstrap/modernize-bootstrap/package/dist/images/svgs/icon-dd-cart.svg"
+                                                        <img src="https://i.ibb.co/dfR49xN/profile.png"
                                                             alt="" class="img-fluid" width="24" height="24">
                                                     </div>
                                                     <div class="d-inline-block">
@@ -93,45 +47,7 @@
                                                             information</span>
                                                     </div>
                                                 </a>
-                                                <a href="app-calendar.php"
-                                                    class="d-flex align-items-center pb-9 position-relative text-decoration-none text-decoration-none text-decoration-none text-decoration-none">
-                                                    <div
-                                                        class="bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                        <img src="https://demos.adminmart.com/premium/bootstrap/modernize-bootstrap/package/dist/images/svgs/icon-dd-date.svg"
-                                                            alt="" class="img-fluid" width="24" height="24">
-                                                    </div>
-                                                    <div class="d-inline-block">
-                                                        <h6 class="mb-1 fw-semibold bg-hover-primary">Calendar App</h6>
-                                                        <span class="fs-2 d-block text-dark">Get dates</span>
-                                                    </div>
-                                                </a>
-                                                <a href="app-contact.php"
-                                                    class="d-flex align-items-center pb-9 position-relative text-decoration-none text-decoration-none text-decoration-none text-decoration-none">
-                                                    <div
-                                                        class="bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                        <img src="https://demos.adminmart.com/premium/bootstrap/modernize-bootstrap/package/dist/images/svgs/icon-dd-lifebuoy.svg"
-                                                            alt="" class="img-fluid" width="24" height="24">
-                                                    </div>
-                                                    <div class="d-inline-block">
-                                                        <h6 class="mb-1 fw-semibold bg-hover-primary">Contact List Table
-                                                        </h6>
-                                                        <span class="fs-2 d-block text-dark">Add new contact</span>
-                                                    </div>
-                                                </a>
-                                                <a href="app-notes.php"
-                                                    class="d-flex align-items-center pb-9 position-relative text-decoration-none text-decoration-none text-decoration-none text-decoration-none">
-                                                    <div
-                                                        class="bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                        <img src="https://demos.adminmart.com/premium/bootstrap/modernize-bootstrap/package/dist/images/svgs/icon-dd-application.svg"
-                                                            alt="" class="img-fluid" width="24" height="24">
-                                                    </div>
-                                                    <div class="d-inline-block">
-                                                        <h6 class="mb-1 fw-semibold bg-hover-primary">Notes Application
-                                                        </h6>
-                                                        <span class="fs-2 d-block text-dark">To-do and Daily
-                                                            tasks</span>
-                                                    </div>
-                                                </a>
+
                                             </div>
                                         </div>
                                     </div>
@@ -140,11 +56,6 @@
                                     <div class="col-8">
                                         <a class="fw-semibold text-dark d-flex align-items-center lh-1 text-decoration-none"
                                             href="#"><i class="ti ti-help fs-6 me-2"></i>Frequently Asked Questions</a>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="d-flex justify-content-end pe-4">
-                                            <button class="btn btn-primary">Check</button>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -174,8 +85,8 @@
                                             href="app-notes.php">Notes App</a>
                                     </li>
                                     <li class="mb-3">
-                                        <a class="fw-semibold text-dark bg-hover-primary text-decoration-none text-decoration-none text-decoration-none text-decoration-none"
-                                            href="{{ route('admin.profile') }}">User Application</a>
+                                        <a class="fw-semibold text-dark bg-hover-primary text-decoration-none"
+                                            href="{{ route($profileData->role . '.profile') }}">User Application</a>
                                     </li>
                                     <li class="mb-3">
                                         <a class="fw-semibold text-dark bg-hover-primary text-decoration-none text-decoration-none text-decoration-none text-decoration-none"
@@ -271,9 +182,9 @@
                         <a class="nav-link pe-0" href="javascript:void(0)" id="drop1" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             <div class="d-flex align-items-center">
-                                <div class="user-profile-img">
-                                    <img src="../../dist/images/profile/user-1.jpg" class="rounded-circle" width="35"
-                                        height="35" alt="" />
+                                <div class="user-profile-img me-2">
+                                    <img src="{{ (!empty($profileData->photo)) ? url('upload/' . $formattedRole . '_images/' . $profileData->photo) : url('upload/no_image.png') }}"
+                                        class="rounded-circle" width="35" height="35" alt="" />
                                 </div>
                             </div>
                         </a>
@@ -284,18 +195,19 @@
                                     <h5 class="mb-0 fs-5 fw-semibold">User Profile</h5>
                                 </div>
                                 <div class="d-flex align-items-center py-9 mx-7 border-bottom">
-                                    <img src="../../dist/images/profile/user-1.jpg" class="rounded-circle" width="80"
-                                        height="80" alt="" />
+                                    <img src="{{ (!empty($profileData->photo)) ? url('upload/' . $formattedRole . '_images/' . $profileData->photo) : url('upload/no_image.png') }}"
+                                        class="rounded-circle" width="80" height="80" alt="" />
                                     <div class="ms-3">
-                                        <h5 class="mb-1 fs-3">Mathew Anderson</h5>
-                                        <span class="mb-1 d-block text-dark">Designer</span>
+                                        <h5 class="mb-1 fs-3">{{ $profileData->name }}</h5>
+                                        <span class="mb-1 d-block text-dark">{{ $profileData->role }}</span>
                                         <p class="mb-0 d-flex text-dark align-items-center gap-2">
-                                            <i class="ti ti-mail fs-4"></i> info@modernize.com
+                                            <i class="ti ti-mail fs-4"></i>{{ $profileData->email }}
                                         </p>
                                     </div>
                                 </div>
                                 <div class="message-body">
-                                    <a href="{{ route('medical_officer.profile') }}" class="py-8 px-7 mt-8 d-flex align-items-center">
+                                    <a href="{{ route($profileData->role . '.profile') }}"
+                                        class="py-8 px-7 mt-8 d-flex align-items-center">
                                         <span
                                             class="d-flex align-items-center justify-content-center bg-light rounded-1 p-6">
                                             <img src="https://demos.adminmart.com/premium/bootstrap/modernize-bootstrap/package/dist/images/svgs/icon-account.svg"
@@ -330,7 +242,8 @@
                                     </a>
                                 </div>
                                 <div class="d-grid py-4 px-7 pt-8">
-                                    <a href="{{ route('medical_officer.logout') }}" class="btn btn-outline-primary">Log Out</a>
+                                    <a href="{{ route($profileData->role . '.logout') }}"
+                                        class="btn btn-outline-primary">Log Out</a>
                                 </div>
                             </div>
                         </div>

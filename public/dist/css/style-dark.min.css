@@ -1,6 +1,14 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&amp;display=swap);
 
+.form-floating>.form-control-plaintext~label,
+.form-floating>.form-control:focus~label,
+.form-floating>.form-control:not(:placeholder-shown)~label,
+.form-floating>.form-select~label {
+    color: floralwhite;
+    transform: scale(.85) translateY(-.5rem) translateX(.15rem)
+}
+
 [data-simplebar] {
     position: relative;
     flex-direction: column;
@@ -26122,14 +26130,6 @@ textarea.form-control-lg {
 .form-floating>.form-select {
     padding-top: 1.625rem;
     padding-bottom: .625rem
-}
-
-.form-floating>.form-control-plaintext~label,
-.form-floating>.form-control:focus~label,
-.form-floating>.form-control:not(:placeholder-shown)~label,
-.form-floating>.form-select~label {
-    color: rgba(var(--bs-body-color-rgb), .65);
-    transform: scale(.85) translateY(-.5rem) translateX(.15rem)
 }
 
 .form-floating>.form-control-plaintext~label::after,
