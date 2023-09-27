@@ -32,4 +32,25 @@ class MedicalOfficerController extends Controller
         $profileData = User::find($id);
         return view('medical_officer.medical_officer_profile_view', compact('profileData'));
     }   //End Method
+
+    public function MedicalOfficerProfileStore(Request $request){
+        $id = Auth::user()->id;
+        $data = User::find($id);
+        $data->name = $request->name;
+        $data->username = $request->username;
+        $data->email = $request->email;
+        $data->phone = $request->phone;
+        $data->address = $request->address;
+        
+        if($request->file('photo')){
+            $file = $request->file('photo');
+            $filename = date('YmdHi').$file->getClientOriginalName();
+            $file->move(public_path('upload/medical_officer_images'), $filename);
+            $data['photo'] = $filename;
+        }
+
+        $data->save();
+
+        return redirect()->back();
+    }
 }

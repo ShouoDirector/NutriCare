@@ -63,19 +63,11 @@
                     <span class="hide-menu">PAGES</span>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="page-account.php" aria-expanded="false">
+                    <a class="sidebar-link" href="{{ route('school_nurse.profile') }}" aria-expanded="false">
                         <span>
                             <i class="ti ti-user-circle"></i>
                         </span>
                         <span class="hide-menu">Profile</span>
-                    </a>
-                </li>
-                <li class="sidebar-item">
-                    <a class="sidebar-link" href="page-account-settings.php" aria-expanded="false">
-                        <span>
-                            <i class="ti ti-user-cog"></i>
-                        </span>
-                        <span class="hide-menu">Account Setting</span>
                     </a>
                 </li>
                 
