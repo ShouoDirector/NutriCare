@@ -43,6 +43,7 @@ class SchoolNurseController extends Controller
         
         if($request->file('photo')){
             $file = $request->file('photo');
+            @unlink(public_path('upload/school_nurse_images/' .$data->photo));
             $filename = date('YmdHi').$file->getClientOriginalName();
             $file->move(public_path('upload/school_nurse_images'), $filename);
             $data['photo'] = $filename;
