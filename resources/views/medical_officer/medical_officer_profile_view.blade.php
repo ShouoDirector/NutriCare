@@ -180,7 +180,7 @@ $formattedRole = strtolower($profileData->role);
                     <div class="card">
                         <div class="card-body">
                             <h5>Update {{ ucwords($formattedRole) }} Information</h5>
-                            <p class="card-subtitle mb-3 text-danger">
+                            <p class="card-subtitle mb-3 text-dark">
                                 <i class="ti ti-alert-circle"></i>
                                 Email address is read-only
                             </p>
@@ -227,7 +227,7 @@ $formattedRole = strtolower($profileData->role);
                                         <button type="submit" class="btn btn-primary font-medium rounded-pill px-4">
                                             <div class="d-flex align-items-center">
                                                 <i class="ti ti-send me-2 fs-4"></i>
-                                                Submit
+                                                Save Changes
                                             </div>
                                         </button>
                                     </div>

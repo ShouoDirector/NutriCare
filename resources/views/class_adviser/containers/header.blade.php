@@ -241,7 +241,11 @@ $formattedRole = strtolower($profileData->role);
                                         </div>
                                     </a>
                                 </div>
-                                <div class="d-grid py-4 px-7 pt-8">
+                                <div class="d-grid px-7 pt-3">
+                                    <a href="{{ route($profileData->role . '.change.password') }}"
+                                        class="btn btn-outline-danger">Change Password</a>
+                                </div>
+                                <div class="d-grid px-7 pt-2">
                                     <a href="{{ route($profileData->role . '.logout') }}"
                                         class="btn btn-outline-primary">Log Out</a>
                                 </div>

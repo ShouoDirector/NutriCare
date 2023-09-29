@@ -1,5 +1,5 @@
-@extends('admin.admin_dashboard')
-@section('admin')
+@extends('class_adviser.class_adviser_dashboard')
+@section('class_adviser')
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
@@ -179,49 +179,34 @@ $formattedRole = strtolower($profileData->role);
                 <div class="col-lg-8">
                     <div class="card">
                         <div class="card-body">
-                            <h5>Update {{ ucwords($formattedRole) }} Information</h5>
-                            <p class="card-subtitle mb-3 text-dark">
+                            <h5>{{ ucwords($formattedRole) }} Change Password</h5>
+                            <p class="card-subtitle mb-3 text-dark mt-1">
                                 <i class="ti ti-alert-circle"></i>
-                                Email address is read-only
+                                Choose a strong, unique password to protect your account.
                             </p>
-                            <form class="" method="POST" action="{{ route('admin.profile.store') }}" enctype="multipart/form-data">
+                            <form class="" method="POST" action="{{ route($profileData->role . '.update.password') }}" enctype="multipart/form-data">
+
                                 @csrf
 
                                 <div class="form-floating mb-3">
-                                    <input type="text" name="name" class="form-control"
-                                        value="{{ $profileData->name }}">
-                                    <label><i class="ti ti-user me-2 fs-4"></i>Name</label>
+                                    <input type="password" name="old_password" class="form-control @error('old_password') is-invalid @enderror" id="old_password">
+                                    <label><i class="ti ti-user me-2 fs-4"></i>Old Password</label>
+                                    @error('old_password')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
                                 </div>
                                 <div class="form-floating mb-3">
-                                    <input type="text" name="username" class="form-control"
-                                        value="{{ $profileData->username }}">
-                                    <label><i class="ti ti-at me-2 fs-4"></i>Username</label>
+                                    <input type="password" name="new_password" class="form-control @error('new_password') is-invalid @enderror" id="new_password">
+                                    <label><i class="ti ti-user me-2 fs-4"></i>New Password</label>
+                                    @error('new_password')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
                                 </div>
                                 <div class="form-floating mb-3">
-                                    <input type="text" name="phone" class="form-control"
-                                        value="{{ $profileData->phone }}">
-                                    <label><i class="ti ti-phone me-2 fs-4"></i>Phone</label>
+                                    <input type="password" name="new_password_confirmation" class="form-control" id="new_password_confirmation">
+                                    <label><i class="ti ti-user me-2 fs-4"></i>Confirm New Password</label>
                                 </div>
-                                <div class="form-floating mb-3">
-                                    <input type="text" name="address" class="form-control"
-                                        value="{{ $profileData->address }}">
-                                    <label><i class="ti ti-map-pin me-2 fs-4"></i>Address</label>
-                                </div>
-                                <div class="mb-3 row">
-                                    <div class="col-10">
-                                        <label class="mb-1 fs-3"><i class="ti ti-photo-plus me-2 fs-4"></i>Photo</label>
-                                        <input class="form-control" name="photo" type="file" id="image">
-                                    </div>
-                                    <div class="linear-gradient d-flex align-items-center justify-content-center rounded-circle"
-                                        style="width: 80px; height: 80px;" ;>
-                                        <div class="col-2 border border-4 border-white d-flex align-items-center justify-content-center rounded-circle overflow-hidden"
-                                            style="width: 75px; height: 75px;">
-                                            <img src="{{ (!empty($profileData->photo)) ? url('upload/' . $formattedRole . '_images/' . $profileData->photo) : url('upload/no_image.png') }}"
-                                                alt="" class="w-70 h-70" id="showImage">
-                                        </div>
-                                    </div>
-                                </div>
-
+                                
                                 <div class="d-md-flex align-items-center">
                                     <div class="mt-3 mt-md-0 ms-auto">
                                         <button type="submit" class="btn btn-primary font-medium rounded-pill px-4">
@@ -265,17 +250,5 @@ $formattedRole = strtolower($profileData->role);
         </div>
     </div>
 </div>
-
-<script type="text/javascript">
-    $(document).ready(function(){
-        $('#image').change(function(e){
-            var reader = new FileReader();
-            reader.onload = function(e){
-                $('#showImage').attr('src',e.target.result);
-            }
-            reader.readAsDataURL(e.target.files['0']);
-        });
-    });
-</script>
 
 @endsection
