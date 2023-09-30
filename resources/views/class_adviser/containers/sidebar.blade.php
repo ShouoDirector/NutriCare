@@ -3,6 +3,12 @@
 <!-- Sidebar -->
 <!-- --------------------------------------------------- -->
 
+@php
+$id = Auth::user()->id;
+$profileData = App\Models\User::find($id);
+$formattedRole = strtolower($profileData->role);
+@endphp
+
 <aside class="left-sidebar">
     <!-- Sidebar scroll-->
     <div>
@@ -31,7 +37,7 @@
                 <!-- Dashboard -->
                 <!-- =================== -->
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="{{ route('admin.dashboard') }}" aria-expanded="false">
+                    <a class="sidebar-link" href="{{ route($formattedRole . '.dashboard') }}" aria-expanded="false">
                         <span>
                             <i class="ti ti-dashboard"></i>
                         </span>
@@ -63,7 +69,7 @@
                     <span class="hide-menu">PAGES</span>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="{{ route('class_adviser.profile') }}" aria-expanded="false">
+                    <a class="sidebar-link" href="{{ route($formattedRole . '.profile') }}" aria-expanded="false">
                         <span>
                             <i class="ti ti-user-circle"></i>
                         </span>
@@ -144,22 +150,6 @@
                 </div>
             </div>
         </nav>
-        <div class="fixed-profile p-3 bg-light-secondary rounded sidebar-ad mt-3">
-            <div class="hstack gap-3">
-                <div class="john-img">
-                    <img src="../../dist/images/profile/user-1.jpg" class="rounded-circle" width="40" height="40"
-                        alt="">
-                </div>
-                <div class="john-title">
-                    <h6 class="mb-0 fs-4 fw-semibold">Mathew</h6>
-                    <span class="fs-2 text-dark">Designer</span>
-                </div>
-                <button class="border-0 bg-transparent text-primary ms-auto" tabindex="0" type="button"
-                    aria-label="logout" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="logout">
-                    <i class="ti ti-power fs-6"></i>
-                </button>
-            </div>
-        </div>
         <!-- End Sidebar navigation -->
     </div>
     <!-- End Sidebar scroll-->

@@ -3,6 +3,12 @@
 <!-- Sidebar -->
 <!-- --------------------------------------------------- -->
 
+@php
+$id = Auth::user()->id;
+$profileData = App\Models\User::find($id);
+$formattedRole = strtolower($profileData->role);
+@endphp
+
 <aside class="left-sidebar">
     <!-- Sidebar scroll-->
     <div>
@@ -31,7 +37,7 @@
                 <!-- Dashboard -->
                 <!-- =================== -->
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="{{ route('admin.dashboard') }}" aria-expanded="false">
+                    <a class="sidebar-link" href="{{ route($formattedRole . '.dashboard') }}" aria-expanded="false">
                         <span>
                             <i class="ti ti-dashboard"></i>
                         </span>
@@ -63,7 +69,7 @@
                     <span class="hide-menu">PAGES</span>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="{{ route('admin.profile') }}" aria-expanded="false">
+                    <a class="sidebar-link" href="{{ route($formattedRole . '.profile') }}" aria-expanded="false">
                         <span>
                             <i class="ti ti-user-circle"></i>
                         </span>
