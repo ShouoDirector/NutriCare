@@ -50,7 +50,7 @@
                                     @csrf
 
                                     <div class="mb-3">
-                                        <x-input-label for="login" class="form-label" :value="__('Email/Name/Phone')" />
+                                        <x-input-label for="login" class="form-label" :value="__('Email')" />
                                         <x-text-input id="login" class="form-control" type="text" name="login"
                                             :value="old('login')" required autofocus autocomplete="username" />
                                         <x-input-error :messages="$errors->get('email')" class="mt-2 text-danger" />

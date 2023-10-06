@@ -29,7 +29,7 @@ class LoginRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'login' => ['required', 'string'],
+            'login' => ['required', 'string', 'email'],
             'password' => ['required', 'string'],
         ];
     }
@@ -44,8 +44,6 @@ class LoginRequest extends FormRequest
         $this->ensureIsNotRateLimited();
 
         $user = User::where('email',$this->login)
-                    -> orWhere('name', $this->login)
-                    -> orWhere('phone', $this->login)
                     -> first();
 
         if ( !$user || !Hash::check($this->password, $user->password)) {
